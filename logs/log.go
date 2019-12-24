@@ -18,7 +18,7 @@ const (
 )
 
 func init() {
-	logs.Async()
+	// logs.Async()
 	logs.SetLogFuncCall(true)
 	logs.SetLevel(logs.LevelDebug)
 	logs.SetLogFuncCallDepth(4)
