@@ -62,7 +62,7 @@ func (l ormLog) Level() core.LogLevel {
 }
 
 func (l ormLog) SetLevel(level core.LogLevel) {
-	panic("implement me")
+	logs.Info("ormLog-SetLevel-Invalid")
 }
 
 func (l ormLog) ShowSQL(show ...bool) {
