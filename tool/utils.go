@@ -9,6 +9,7 @@ import (
 	"golang.org/x/text/encoding/simplifiedchinese"
 	"golang.org/x/text/transform"
 	"io/ioutil"
+	"regexp"
 	"time"
 	"unsafe"
 )
@@ -105,4 +106,14 @@ func Utf8ToGbk(s []byte) ([]byte, error) {
 		return nil, e
 	}
 	return d, nil
+}
+
+// CompressStr remove blank character
+func CompressStr(str string) string {
+	if str == "" {
+		return ""
+	}
+	//匹配一个或多个空白符的正则表达式
+	reg := regexp.MustCompile("\\s+")
+	return reg.ReplaceAllString(str, "")
 }
