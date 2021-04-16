@@ -3,11 +3,11 @@ package pprof
 import (
 	"context"
 	"fmt"
-	"github.com/any-lyu/go.library/logs"
 	"net/http"
-	// start pprof
-	_ "net/http/pprof"
+	_ "net/http/pprof" // justifying
 	"time"
+
+	"github.com/any-lyu/go.library/logs"
 )
 
 // Config pprof config

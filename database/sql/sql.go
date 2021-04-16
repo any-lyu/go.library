@@ -3,12 +3,13 @@ package sql
 import (
 	"context"
 	"database/sql"
-	"github.com/any-lyu/go.library/tool"
 	"time"
+
+	"github.com/opentracing/opentracing-go"
 
 	"github.com/any-lyu/go.library/logs"
 	"github.com/any-lyu/go.library/stat"
-	"github.com/opentracing/opentracing-go"
+	"github.com/any-lyu/go.library/tool"
 )
 
 const (

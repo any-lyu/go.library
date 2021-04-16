@@ -2,10 +2,11 @@ package aqm
 
 import (
 	"context"
-	"github.com/any-lyu/go.library/errors"
 	"math"
 	"sync"
 	"time"
+
+	"github.com/any-lyu/go.library/errors"
 )
 
 // Config codel config.

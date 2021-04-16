@@ -1,9 +1,10 @@
 package middleware
 
 import (
+	"github.com/valyala/fasthttp"
+
 	"github.com/any-lyu/go.library/logs"
 	"github.com/any-lyu/go.library/runtime"
-	"github.com/valyala/fasthttp"
 )
 
 // Recover 异常处理

@@ -1,19 +1,18 @@
 package orm
 
 import (
-	"github.com/any-lyu/go.library/errors"
 	"time"
+
+	_ "github.com/go-sql-driver/mysql" // justifying
+	"github.com/go-xorm/xorm"
 	"xorm.io/core"
 
+	"github.com/any-lyu/go.library/errors"
 	"github.com/any-lyu/go.library/logs"
 	xtime "github.com/any-lyu/go.library/time"
-
-	// database driver
-	_ "github.com/go-sql-driver/mysql"
-	"github.com/go-xorm/xorm"
 )
 
-// Config mysql config.
+// Config database config.
 type Config struct {
 	DSN         string         // data source name.
 	Active      int            // pool
@@ -83,7 +82,7 @@ func init() {
 
 // NewMySQL new db and retry connection when has error.
 func NewMySQL(c *Config) (db *xorm.Engine) {
-	db, err := xorm.NewEngine("mysql", c.DSN)
+	db, err := xorm.NewEngine("database", c.DSN)
 	if err != nil {
 		logs.Error("db dsn(%s) error: %v", c.DSN, err)
 		panic(err)

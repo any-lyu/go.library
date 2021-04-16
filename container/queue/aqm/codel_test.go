@@ -3,11 +3,12 @@ package aqm
 import (
 	"context"
 	"fmt"
-	"github.com/any-lyu/go.library/errors"
 	"sync"
 	"sync/atomic"
 	"testing"
 	"time"
+
+	"github.com/any-lyu/go.library/errors"
 )
 
 var testConf = &Config{

@@ -6,8 +6,8 @@ import (
 )
 
 func TestGet(t *testing.T) {
-	//Set("test",[]byte("haha"))
+	//Set("server",[]byte("haha"))
 
-	bytes, e := Get("test")
+	bytes, e := Get("server")
 	fmt.Printf("%s err = %v \n", bytes, e)
 }

@@ -1,10 +1,12 @@
 package cache
 
 import (
-	"github.com/allegro/bigcache"
-	"github.com/any-lyu/go.library/logs"
 	"sync"
 	"time"
+
+	"github.com/allegro/bigcache"
+
+	"github.com/any-lyu/go.library/logs"
 )
 
 var (

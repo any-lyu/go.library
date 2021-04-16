@@ -1,10 +1,12 @@
 package jwt
 
 import (
-	"github.com/dgrijalva/jwt-go"
-	"github.com/any-lyu/go.library/errors"
 	"strings"
 	"time"
+
+	"github.com/dgrijalva/jwt-go"
+
+	"github.com/any-lyu/go.library/errors"
 )
 
 // TokenGenerateClaims jwt token add uid

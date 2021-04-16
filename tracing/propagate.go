@@ -2,12 +2,14 @@ package tracing
 
 import (
 	"context"
-	"github.com/any-lyu/go.library/logs"
-	"github.com/opentracing/opentracing-go"
-	"github.com/opentracing/opentracing-go/ext"
 	"net"
 	"net/http"
 	"strconv"
+
+	"github.com/opentracing/opentracing-go"
+	"github.com/opentracing/opentracing-go/ext"
+
+	"github.com/any-lyu/go.library/logs"
 )
 
 // ContextToHTTP propagate tracing info into HTTP header, useful in server side.

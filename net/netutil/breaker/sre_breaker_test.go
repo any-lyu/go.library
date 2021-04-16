@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	xtime "github.com/any-lyu/go.library/time"
-
 	"github.com/stretchr/testify/assert"
+
+	xtime "github.com/any-lyu/go.library/time"
 )
 
 func getSRE() Breaker {

@@ -1,8 +1,9 @@
 package middleware
 
 import (
-	"github.com/valyala/fasthttp"
 	"time"
+
+	"github.com/valyala/fasthttp"
 )
 
 //Timeout http timeout

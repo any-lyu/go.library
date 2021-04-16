@@ -1,10 +1,11 @@
 package fasthttp
 
 import (
+	"github.com/valyala/fasthttp"
+
 	"github.com/any-lyu/go.library/errors"
 	"github.com/any-lyu/go.library/logs"
 	"github.com/any-lyu/go.library/tool"
-	"github.com/valyala/fasthttp"
 )
 
 // HandlerFunc 是 http handler 函数模型.

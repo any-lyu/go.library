@@ -2,9 +2,10 @@ package cpu
 
 import (
 	"fmt"
-	log "github.com/any-lyu/go.library/logs"
 	"sync/atomic"
 	"time"
+
+	log "github.com/any-lyu/go.library/logs"
 )
 
 var (

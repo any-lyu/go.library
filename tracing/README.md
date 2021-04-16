@@ -58,7 +58,7 @@ func hello(c echo.Context) error {
 	sp.SetTag("example", "example")
 	
 	// Log something you like to the span, optional.
-	sp.LogKV("test", "test")
+	sp.LogKV("server", "server")
 	
 	tracing.Redis().FinishSpan(sp, err)
 	

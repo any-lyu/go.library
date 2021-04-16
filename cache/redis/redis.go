@@ -1,10 +1,12 @@
 package redis
 
 import (
-	"github.com/garyburd/redigo/redis"
-	"github.com/any-lyu/go.library/errors"
 	"strconv"
 	"time"
+
+	"github.com/garyburd/redigo/redis"
+
+	"github.com/any-lyu/go.library/errors"
 )
 
 // Client redis client

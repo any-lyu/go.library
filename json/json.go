@@ -1,8 +1,9 @@
 package json
 
 import (
-	"github.com/json-iterator/go"
 	"io"
+
+	jsoniter "github.com/json-iterator/go"
 )
 
 var jsonConfig = jsoniter.ConfigCompatibleWithStandardLibrary

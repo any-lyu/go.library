@@ -1,8 +1,9 @@
 package jwt
 
 import (
-	"github.com/siddontang/go/log"
 	"testing"
+
+	"github.com/siddontang/go/log"
 )
 
 func TestTokenGenerate(t *testing.T) {

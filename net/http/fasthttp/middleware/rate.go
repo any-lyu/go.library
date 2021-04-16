@@ -1,10 +1,12 @@
 package middleware
 
 import (
-	"github.com/any-lyu/go.library/errors"
+	"time"
+
 	"github.com/valyala/fasthttp"
 	"golang.org/x/time/rate"
-	"time"
+
+	"github.com/any-lyu/go.library/errors"
 )
 
 // RateHandler 限流

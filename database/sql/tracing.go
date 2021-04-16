@@ -17,7 +17,7 @@ func startTracingSpan(ctx context.Context, operationName, query string) opentrac
 	}
 	span := opentracing.GlobalTracer().StartSpan(operationName, opentracing.ChildOf(parentSpan.Context()))
 	ext.SpanKindRPCClient.Set(span)
-	ext.DBType.Set(span, "mysql")
+	ext.DBType.Set(span, "database")
 	ext.DBStatement.Set(span, query)
 	return span
 }

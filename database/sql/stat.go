@@ -1,8 +1,9 @@
 package sql
 
 import (
-	"github.com/any-lyu/go.library/stat"
 	"time"
+
+	"github.com/any-lyu/go.library/stat"
 )
 
 // statistics 收集监控信息

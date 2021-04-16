@@ -1,10 +1,12 @@
 package middleware
 
 import (
-	"github.com/any-lyu/go.library/logs"
-	"github.com/valyala/fasthttp"
 	"net/http"
 	"time"
+
+	"github.com/valyala/fasthttp"
+
+	"github.com/any-lyu/go.library/logs"
 )
 
 // BaseHandler  log + cross

@@ -3,12 +3,12 @@ package config
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/fsnotify/fsnotify"
 	"io/ioutil"
 	"log"
 	"os/exec"
 	"path/filepath"
-	// "github.com/spf13/viper"
+
+	"github.com/fsnotify/fsnotify"
 )
 
 // Viper config struct

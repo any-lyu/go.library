@@ -1,12 +1,12 @@
 package breaker
 
 import (
-	"github.com/any-lyu/go.library/errors"
 	"math"
 	"math/rand"
 	"sync/atomic"
 	"time"
 
+	"github.com/any-lyu/go.library/errors"
 	log "github.com/any-lyu/go.library/logs"
 	"github.com/any-lyu/go.library/stat/summary"
 )

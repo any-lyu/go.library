@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	xtime "github.com/any-lyu/go.library/time"
-
 	"github.com/stretchr/testify/assert"
+
+	xtime "github.com/any-lyu/go.library/time"
 )
 
 type closer struct {
@@ -53,7 +53,7 @@ func TestSliceGetPut(t *testing.T) {
 		return &closer{}, nil
 	}
 
-	// test Get Put
+	// server Get Put
 	conn, err := pool.Get(context.TODO())
 	assert.Nil(t, err)
 	c1 := connection{pool: pool, c: conn}
@@ -79,7 +79,7 @@ func TestSlicePut(t *testing.T) {
 		id = id + 1
 		return &connID{id: id, Closer: &closer{}}, nil
 	}
-	// test Put(ctx, conn, true)
+	// server Put(ctx, conn, true)
 	conn, err := pool.Get(context.TODO())
 	assert.Nil(t, err)
 	conn1 := conn.(*connID)
@@ -108,7 +108,7 @@ func TestSliceIdleTimeout(t *testing.T) {
 		id = id + 1
 		return &connID{id: id, Closer: &closer{}}, nil
 	}
-	// test Put(ctx, conn, true)
+	// server Put(ctx, conn, true)
 	conn, err := pool.Get(context.TODO())
 	assert.Nil(t, err)
 	conn1 := conn.(*connID)
@@ -135,7 +135,7 @@ func TestSliceContextTimeout(t *testing.T) {
 	pool.New = func(ctx context.Context) (io.Closer, error) {
 		return &closer{}, nil
 	}
-	// test context timeout
+	// server context timeout
 	ctx, cancel := context.WithTimeout(context.TODO(), 100*time.Millisecond)
 	defer cancel()
 	conn, err := pool.Get(ctx)
@@ -149,7 +149,7 @@ func TestSliceContextTimeout(t *testing.T) {
 }
 
 func TestSlicePoolExhausted(t *testing.T) {
-	// test pool exhausted
+	// server pool exhausted
 	config := &Config{
 		Active:      1,
 		Idle:        1,

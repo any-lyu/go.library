@@ -3,11 +3,13 @@ package prom
 import (
 	"context"
 	"fmt"
-	"github.com/any-lyu/go.library/logs"
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"net/http"
 	"time"
+
+	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
+
+	"github.com/any-lyu/go.library/logs"
 )
 
 var (

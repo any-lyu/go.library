@@ -2,7 +2,6 @@ package tracing
 
 import (
 	"context"
-	"github.com/any-lyu/go.library/logs"
 	"io"
 
 	"github.com/opentracing/opentracing-go"
@@ -12,6 +11,8 @@ import (
 	jaegercfg "github.com/uber/jaeger-client-go/config"
 	jaegerlog "github.com/uber/jaeger-client-go/log"
 	"github.com/uber/jaeger-client-go/transport"
+
+	"github.com/any-lyu/go.library/logs"
 )
 
 // DefaultSampleRate is the default sample rate

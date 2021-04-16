@@ -2,9 +2,11 @@ package common
 
 import (
 	"context"
-	"github.com/any-lyu/go.library/errgroup"
-	"golang.org/x/sync/singleflight"
 	"sync"
+
+	"golang.org/x/sync/singleflight"
+
+	"github.com/any-lyu/go.library/errgroup"
 )
 
 var (

@@ -1,8 +1,9 @@
 package middleware
 
 import (
-	"github.com/any-lyu/go.library/jwt"
 	"github.com/valyala/fasthttp"
+
+	"github.com/any-lyu/go.library/jwt"
 )
 
 // BasicAuth is the basic auth handler

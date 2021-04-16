@@ -8,7 +8,7 @@ import (
 )
 
 func TestGaugeCounter(t *testing.T) {
-	key := "test"
+	key := "server"
 	g := &Group{
 		New: func() Counter {
 			return NewGauge()
@@ -24,7 +24,7 @@ func TestGaugeCounter(t *testing.T) {
 }
 
 func TestRollingCounter(t *testing.T) {
-	key := "test"
+	key := "server"
 	g := &Group{
 		New: func() Counter {
 			return NewRolling(time.Second, 10)

@@ -1,0 +1,12 @@
+(io.Closer).Close
+(io.ReadCloser).Close
+(io.ReadWriteCloser).Close
+(io.WriteCloser).Close
+(*hash/maphash.Hash).WriteByte
+(*hash/maphash.Hash).Write
+(*hash/maphash.Hash).WriteString
+(github.com/any-lyu/go.library/database/sql.Tx).Rollback
+(github.com/any-lyu/go.library/database/sql.Rows).Close
+(github.com/any-lyu/go.library/database/sql.DB).Close
+(github.com/any-lyu/go.library/database/sql.Conn).Close
+(github.com/garyburd/redigo/redis.Conn).Close

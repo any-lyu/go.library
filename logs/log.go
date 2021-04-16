@@ -1,8 +1,9 @@
 package logs
 
 import (
-	"github.com/astaxie/beego/logs"
 	"os"
+
+	"github.com/astaxie/beego/logs"
 )
 
 // RFC5424 log message levels.

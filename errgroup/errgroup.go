@@ -2,9 +2,10 @@ package errgroup
 
 import (
 	"context"
-	"github.com/any-lyu/go.library/logs"
 	"runtime"
 	"sync"
+
+	"github.com/any-lyu/go.library/logs"
 )
 
 // A Group is a collection of goroutines working on subtasks that are part of
