@@ -21,11 +21,10 @@ require (
 	github.com/uber-go/atomic v1.4.0 // indirect
 	github.com/uber/jaeger-client-go v2.17.0+incompatible
 	github.com/uber/jaeger-lib v2.1.1+incompatible // indirect
-	github.com/valyala/fasthttp v1.4.0
+	github.com/valyala/fasthttp v1.34.0
 	go.uber.org/atomic v1.4.0 // indirect
 	golang.org/x/sync v0.0.0-20190423024810-112230192c58
-	golang.org/x/sys v0.0.0-20190907184412-d223b2b6db03 // indirect
-	golang.org/x/text v0.3.2
+	golang.org/x/text v0.3.7
 	golang.org/x/time v0.0.0-20190308202827-9d24e82272b4
 	xorm.io/core v0.7.0
 
